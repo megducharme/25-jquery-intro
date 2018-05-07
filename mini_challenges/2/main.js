@@ -1,11 +1,11 @@
 //1. On page load, hide the unordered list with class "item-list".
 
-$('.item-list').hide();
-$('.item-list').on('load').hide();
+// $('.item-list').hide();
+// $('.item-list').on('load').hide();
 
 //2. When a user hovers over the h3 element with id "toggle-header", use the toggle jQuery method to show/hide the list with class "item-list".
 
-$('#toggle-header h3').hover(function(){
+$('#toggle-header').hover(function(){
     $('.item-list').toggle();
 });
   

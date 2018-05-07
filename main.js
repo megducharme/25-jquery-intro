@@ -6,7 +6,7 @@
 
 
 function biography(firstName, lastName, favoriteDrink) {
-  console.log(firstName + ' ' + lastName + "'s "+ 'favorite drink is ' + favoriteDrink);
+  // console.log(firstName + ' ' + lastName + "'s "+ 'favorite drink is ' + favoriteDrink);
 }
 biography('Meg', 'Ducharme', 'coffee or peppermint tea');
 
@@ -19,7 +19,7 @@ let person = {
 };
 
 function biography(person) {
-  console.log(person.firstName + ' ' + person.lastName + "'s " + 'favorite drink is ' + person.favoriteDrink);
+  // console.log(person.firstName + ' ' + person.lastName + "'s " + 'favorite drink is ' + person.favoriteDrink);
 }
 biography(person);
 
@@ -121,7 +121,7 @@ $('#coffee').click(function() {
 
 ////////////////////////////////////////
 ////////////////////////////////////////
-//////////EnLightening Challenge////////
+//////////Lightning Challenge////////
 ////////////////////////////////////////
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -141,7 +141,7 @@ $('#color').dblclick(function() {
 
 
 $('#clickMe').click(function() {
-  $('#output3').html('<h1>Time for a Lightening Challenge!</h1>');
+  $('#output3').html('<h1>Time for a Lightning Challenge!</h1>');
 });
 
   
@@ -167,7 +167,7 @@ $('#para_2').on('click', 'button', function(event){
 
 ////////////////////////////////////////
 ////////////////////////////////////////
-///////////enLightening Challenge/////////
+///////////Lightning Challenge/////////
 ////////////////////////////////////////
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -176,47 +176,47 @@ $('#para_2').on('click', 'button', function(event){
 
 //////////////Animations///////////////
 
-// $('#sleepy').click(function() {
-//   $('#sleepy').fadeOut('fast');
-// });
+$('#sleepy').click(function() {
+  $('#sleepy').fadeOut(2000);
+});
 
   
-// $('#wakeUp').click(function() {
-//   $('#wakeUp').animate(
-//     {
-//       fontSize: '+=50'
-//     },
-//     2000
-//   );
-// });
+$('#wakeUp').click(function() {
+  $('#wakeUp').animate(
+    {
+      fontSize: '+=50'
+    },
+    3000
+  );
+});
   
 
-// $('#bee').click(function() {
-//   animate();
-// });
+$('#bee').click(function() {
+  animate();
+});
   
 
-// function animate() {
-//   $('#bee').animate(
-//     {
-//       marginLeft: '100%',
-//       width: '+=300',
-//       opacity: 0
-//     },
-//     100,
-//     function() {
-//       $('#bee').animate(
-//         {
-//           marginLeft: 0,
-//           width: '-=300',
-//           opacity: 1
-//         },
-//         3000,
-//         animate
-//       );
-//     }
-//   );
-// }
+function animate() {
+  $('#bee').animate(
+    {
+      marginLeft: '100%',
+      width: '+=300',
+      opacity: 0
+    },
+    100,
+    function() {
+      $('#bee').animate(
+        {
+          marginLeft: 0,
+          width: '-=300',
+          opacity: 1
+        },
+        3000,
+        animate
+      );
+    }
+  );
+}
 
 
 ///////AJX and the jQuery CDN///////
